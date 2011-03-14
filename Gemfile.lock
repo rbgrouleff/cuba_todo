@@ -1,0 +1,38 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    activemodel (3.0.5)
+      activesupport (= 3.0.5)
+      builder (~> 2.1.2)
+      i18n (~> 0.4)
+    activesupport (3.0.5)
+    builder (2.1.2)
+    couch_potato (0.4.0)
+      activemodel
+      couchrest (>= 1.0.1)
+      json
+    couchrest (1.0.2)
+      json (~> 1.5.1)
+      mime-types (~> 1.15)
+      rest-client (~> 1.6.1)
+    cuba (2.0.0.rc3)
+      rack (~> 1.2)
+      tilt (~> 1.2)
+    i18n (0.5.0)
+    json (1.5.1)
+    mime-types (1.16)
+    rack (1.2.2)
+    rest-client (1.6.1)
+      mime-types (>= 1.16)
+    sass (3.1.0.alpha.221)
+    tilt (1.2.2)
+    validatable (1.6.7)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  couch_potato
+  cuba (= 2.0.0.rc3)
+  sass (= 3.1.0.alpha.221)
+  validatable

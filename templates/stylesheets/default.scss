@@ -1,0 +1,32 @@
+body {
+  background: #b2b2b2;
+  font-family: 'Lucida Sans', 'Lucida Grande', verdana, sans-serif;
+
+  .todos {
+    background: #FFF;
+    width: 450px;
+    margin: 50px auto;
+    border-radius: 8px;
+    border: 1px solid #454548;
+    box-shadow: 0 0 35px #444;
+
+    .new_todo {
+      border-bottom: 1px solid #454548;
+      text-align: center;
+      padding: 15px;
+
+      input[type='text'] {
+        font-size: 18px;
+        width: 400px;
+        border-radius: 4px;
+        text-align: center;
+      }
+    }
+    .todo_list {
+      list-style-type: none;
+      min-height: 100px;
+      margin: 0;
+      padding: 10px;
+    }
+  }
+}

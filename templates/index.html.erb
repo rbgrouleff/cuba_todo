@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/default.css">
+    <title><%= title %></title>
+  </head>
+  <body>
+    <div id="main">
+      <div class="todos">
+        <div class="new_todo">
+          <form action="/todos" method="post" class="todo_form" accept-charset="UTF-8">
+            <div>
+              <input type="hidden" name="utf8" value="✓">
+              <input type="text" name="text" autofocus>
+            </div>
+          </form>
+        </div>
+        <ul class="todo_list">
+          <% todos.each do |todo| %>
+            <li class="todo">
+              <span class="text"><%= todo.text %></span>
+              <a href="/todos/<%= todo.id %>/delete">Done</a>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
